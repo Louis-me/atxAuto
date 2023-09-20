@@ -429,12 +429,12 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
 }
 </script>
     <h1>pytest示例项目测试报告</h1>
-    <p>Report generated on 15-Sep-2023 at 18:46:16 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a> v3.1.1</p>
+    <p>Report generated on 18-Sep-2023 at 10:25:59 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a> v3.1.1</p>
     <h2>Summary</h2>
     <p>所属部门: 测试组</p>
     <p>框架设计: XXX</p>
-    <p>3 tests ran in 43.75 seconds. </p>
-    <p class="filter" hidden="true">(Un)check the boxes to filter the results.</p><input checked="true" class="filter" data-test-result="passed" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="passed">2 passed</span>, <input checked="true" class="filter" data-test-result="skipped" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="skipped">0 skipped</span>, <input checked="true" class="filter" data-test-result="failed" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="failed">1 failed</span>, <input checked="true" class="filter" data-test-result="error" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="error">0 errors</span>, <input checked="true" class="filter" data-test-result="xfailed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xfailed">0 expected failures</span>, <input checked="true" class="filter" data-test-result="xpassed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xpassed">0 unexpected passes</span>
+    <p>0 tests ran in 9.66 seconds. </p>
+    <p class="filter" hidden="true">(Un)check the boxes to filter the results.</p><input checked="true" class="filter" data-test-result="passed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="passed">0 passed</span>, <input checked="true" class="filter" data-test-result="skipped" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="skipped">0 skipped</span>, <input checked="true" class="filter" data-test-result="failed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="failed">0 failed</span>, <input checked="true" class="filter" data-test-result="error" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="error">0 errors</span>, <input checked="true" class="filter" data-test-result="xfailed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xfailed">0 expected failures</span>, <input checked="true" class="filter" data-test-result="xpassed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xpassed">0 unexpected passes</span>
     <h2>Results</h2>
     <table id="results-table">
       <thead id="results-table-head">
@@ -444,31 +444,4 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
           <th class="sortable" col="name">Test</th>
           <th class="sortable" col="duration">Duration</th></tr>
         <tr hidden="true" id="not-found-message">
-          <th colspan="4">No results found. Try to check the filters</th></tr></thead>
-      <tbody class="failed results-table-row">
-        <tr>
-          <td class="col-result">Failed</td>
-          <td>None</td>
-          <td class="col-name">testcase/大回归/小回归/冒烟/test_Case_001.py::TestCase::test1_001</td>
-          <td class="col-duration">21.25</td></tr>
-        <tr>
-          <td class="extra" colspan="4">
-            <div class="log">self = &lt;冒烟.test_Case_001.TestCase object at 0x0000024C1570E148&gt;<br/>driver = &lt;uiautomator2.Device object at 0x0000024C1570EDC8&gt;<br/><br/>    def test1_001(self, driver):<br/>        driver.app_start(&quot;com.jianshu.haruki&quot;)<br/>&gt;       driver(resourceId=&quot;com.jianshu.haruki:id/ll_notification1&quot;).click()<br/><br/>testcase\大回归\小回归\冒烟\test_Case_001.py:13: <br/>_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _<br/>D:\app\Python37\lib\site-packages\uiautomator2\_selector.py:150: in click<br/>    self.must_wait(timeout=timeout)<br/>_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _<br/><br/>self = &lt;uiautomator2._selector.UiObject object at 0x0000024C1578A308&gt;<br/>exists = True, timeout = None<br/><br/>    def must_wait(self, exists=True, timeout=None):<br/>        &quot;&quot;&quot; wait and if not found raise UiObjectNotFoundError &quot;&quot;&quot;<br/>        if not self.wait(exists, timeout):<br/>&gt;           raise UiObjectNotFoundError({&#x27;code&#x27;: -32002, &#x27;data&#x27;: str(self.selector), &#x27;method&#x27;: &#x27;wait&#x27;})<br/><span class="error">E           uiautomator2.exceptions.UiObjectNotFoundError: -32002 Client error: &lt;&gt; data: Selector [resourceId=&#x27;com.jianshu.haruki:id/ll_notification1&#x27;], method: None</span><br/><br/>D:\app\Python37\lib\site-packages\uiautomator2\_selector.py:345: UiObjectNotFoundError<br/></div></td></tr></tbody>
-      <tbody class="passed results-table-row">
-        <tr>
-          <td class="col-result">Passed</td>
-          <td>None</td>
-          <td class="col-name">testcase/大回归/小回归/冒烟/test_001.py::test_001</td>
-          <td class="col-duration">20.98</td></tr>
-        <tr>
-          <td class="extra" colspan="4">
-            <div class="empty log">通过的用例未捕获日志输出.</div></td></tr></tbody>
-      <tbody class="passed results-table-row">
-        <tr>
-          <td class="col-result">Passed</td>
-          <td>None</td>
-          <td class="col-name">testcase/大回归/小回归/冒烟/test_Case_001.py::TestCase::test_001</td>
-          <td class="col-duration">1.42</td></tr>
-        <tr>
-          <td class="extra" colspan="4">
-            <div class="empty log">通过的用例未捕获日志输出.</div></td></tr></tbody></table></body></html>
+          <th colspan="4">No results found. Try to check the filters</th></tr></thead></table></body></html>
