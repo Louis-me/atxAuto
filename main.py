@@ -14,10 +14,10 @@ if __name__ == '__main__':
     test_case.start()
     # test_case.join()
     # 小回归
-    test_case2 = Process(target=main, args=("E:\proj\\atxAuto\\testcase\\大回归\\小回归\\冒烟1", "ZL9LC685V86DNNMN", "2"))
-    test_case2.start()
+    # test_case2 = Process(target=main, args=("E:\proj\\atxAuto\\testcase\\大回归\\小回归\\冒烟1", "ZL9LC685V86DNNMN", "2"))
+    # test_case2.start()
 
     test_case.join()
-    test_case2.join()
+    # test_case2.join()
     # 冒烟
     ...
